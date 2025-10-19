@@ -7,12 +7,12 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub')
-        IMAGE_NAME = "divyashukla23/jenkins_demo"
+        IMAGE_NAME = "vikram140602/jenkins1_demo"
     }
     stages {
         stage('Clone repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/divyashukla23/jenkins2'
+                git branch: 'main', url: 'https://github.com/Kowsik1406/jenkins1.git'
             }
         }
 
