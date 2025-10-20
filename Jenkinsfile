@@ -20,7 +20,7 @@ pipeline {
             steps {
                 script {
                     sh 'docker build -t $IMAGE_NAME:latest .'
-                    echo"Image Build Successfully"
+                    echo"Image Build Successfully."
                 }
             }
         }
